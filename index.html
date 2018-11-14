@@ -41,21 +41,94 @@ You've done it hero, you have saved HackerYou, your cohort, and the world, from 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <!-- <script src="script.js"></script> -->
     <script>
+    // const scanFob = confirm('You scan your trusty key fob and the doors slowly open, the lights are dim, you turn on your phone flashlight. Do you...');
+    //     if (){//call in elevator function
+    // } else{
+    //     //run stairs function
+    // }
+
+    // const buzzIn = confirm('You buzz up to HackerYou to see if there is any response. First attempt does nothing. You try again, and this time you get a weird static youve never heard before, and the doors slowly open. You walk through and...')
+    //     if(){
+    //         //run elevator function
+    //     }
+    //     else{
+    //         //run stairs function
+    //     }
+
+    // const elevator = confirm('You find an exhauted Brandon sitting on the ground, back against the elevator wall. He weakly says "You cant save them, its too late", and passes out. Do you...');
+    //     if(){
+    //         //run go up elevator
+    //     }
+    //     else{
+    //         //run stairs function
+    //     }  
+
+    // const stairs = confirm('You slowly start going up the stairs, when you turn the corner to the second floor you see Sam standing at the top, staring down. You call out "Whats going on??" and there is no response. Do you...');
+    //     if(){
+    //         //run walkupstairs function
+    //     }
+    //     else{
+    //         //run pushdownstairs function
+    //     }    
+
+    
+
+    const useStairs = function(){
+        const walkUp = confirm('You slowly start going up the stairs, when you turn the corner to the second floor you see Sam standing at the top, staring down. You call out "Whats going on??" and there is no response. Do you...');
+        if (walkUp == true){
+            enterMain();
+        } else{
+            endGame1();
+        }
+    }
+
+    const useElevtor = function(){
+        const goUp = confirm('You walk to the elevator only to find an exhauted Brandon sitting on the ground, back against the elevator wall. He weakly says "You cant save them, its too late", and passes out. Do you...');
+        if (goUp == true){
+            enterMain();
+        }
+        else{
+            useStairs();
+        }
+    }
+
+
+    const callUp = function(){
+        const stairsOrElevator = confirm('You buzz up to HackerYou to see if there is any response. First attempt does nothing. You try again, and this time you get a weird static youve never heard before, and the doors slowly open. You walk through and...');
+        if (stairsOrElevator == true){
+            useElevtor();
+        } else{
+            useStairs();
+        }
+    }
+
+    const scanFob = function(){
+        const elevatorOrStairs = confirm('You scan your trusty key fob and the doors slowly open, the lights are dim, you turn on your phone flashlight. Do you...');
+        if(elevatorOrStairs == true){
+            useElevtor();
+        } else {
+            useStairs();
+        }
+    }
+
+    const howToEnter = function(){
+        const fobOrbuzz = confirm('You get to the HackerYou building and you already sense something is off. The lights inside are flickering erratically. To enter, you decide to...');
+        if(fobOrbuzz === true){
+            scanFob();
+        } else {
+            callUp();
+        }
+    
+    }
+
     const enterBuilding = confirm('You havent heard from your Cohort project partners for days. Concerned, you head over to HackerYou to see if you can get some answers');
     if (enterBuilding == true){
-        //choose to go to HackerYou
-
-        
+        howToEnter();
     }
     else{
         alert('Too bad! Youre off to be a hero anyways!')
+        howToEnter();
     }
-        const howToEnter = prompt('You get to HackerYou, to enter you...');
-    
-    
-    
-    
-    
     
     </script>
 </body>
