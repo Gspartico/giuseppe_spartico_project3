@@ -43,7 +43,7 @@ You've done it hero, you have saved HackerYou, your cohort, and the world, from 
     <script>
     
     const endGame1 = function(){
-        alert('You make your way towards Sam. The second you reach him and stick your hand out to shake him, he looks directly at you and suddenly pushes you down the stairs. You hit every step and are knocked unconcious, but never heard from again...')
+        alert('Ummmmmm maybe dont run towards people not saying anything acting super weird? Like, Duh. You did this to yourself')
     }
 
     const endGame2 = function(){
@@ -54,8 +54,77 @@ You've done it hero, you have saved HackerYou, your cohort, and the world, from 
         alert('You decide to check the bathrooms, not sure if it is because of paranoia or adreneline. You search around the left bathroom and find nothing.  The right bathroom has the same result. You swing open the door only to come face to face with Scott and Mikey. Before you could even move again, Mikey pulls you out of the bathroom and turns you towards the flashing laptop. Now..youre of them...')
     }
 
+    const endGame4 = function(){
+        alert('Lol, way to be a wuss you wuss. Now the world is doomed anyways, you could have at least tried. Booooooo')
+    }
+
+    const endGame5 = function(){
+        alert('Okkkkkkkk so youre just gonna doom all your friends and probably the world because you were scared of some test. Cool. Cool cool cool.')
+    }
+
+    const endGame6 = function(){
+        alert('Hahaha, you insolent fool, truly thought your puny mortal mind could complete my test?? Youre mind is now mine!!')
+    }
+
+    const endGame7 = function(){
+        alert('Silly human. Youve wasted my time. For your insolence I will now scatter your mind across the internet, forever forcing you to create -something annoying in Javascript that constantly fails- It is more than you deserve.')
+    }
+
+    const endGame8 = function(){
+        alert('I will awknowledge your efforts, but your demise was preordained. Now go and join your former comrades as another of my personal minions')
+    }
+
+    const goodEnding = function(){
+        alert('Youve done it hero, you have saved HackerYou, your cohort, and the world, from one of The Internets biggest threats. You are named Pug Lord of HackerYou - the highest of all honours - and gifted Dug, immortal protector of this scared space. Enjoy your spoils, for you will be called upon again..')
+    }
+
+    const finishtheGame = function(){
+        const theEnd = confirm('"NOOOOOOOOO IT CANNOT BE, I WILL GET MY REVENGE HUMANNNNNNNNN" Javascript screams as the laptop implodes within itself. The lights in the building come back one by one. Everyone under Javascripts control slowly come too their senses and try to grasp what is happening. You leave the back classroom and enter the common area')
+        if (theEnd == true){
+            goodEnding()
+        } else{
+            goodEnding()
+        }
+    }
+
+    const questionThree = function(){
+        const answerThree = confirm ('The Javascript monster shrinks even further, panting, trying to hide its agony. "Do not get cocky human, I cannot be bested. CONFRONT YOUR DOOM! QUESTION THREE!"')
+        if(answerThree == true){
+            finishtheGame()
+        } else{
+            endGame8()
+        }
+    }
+
+    const questionTwo = function(){
+        const answerTwo = confirm('The Javascript monster shrinks in size - "Aha, so you are not a complete imbecile, but prepare your mind for question two!"');
+        if(answerTwo == true){
+            questionThree()
+        } else{
+            endGame7()
+        }
+    }
+
+    const questionOne = function(){
+        const answerOne = confirm('You stick your hand out and motion "come on" like some badass Neo-type from the matrix and the demon speaks "Question the first:"');
+        if(answerOne == true){
+            questionTwo()
+        } else{
+            endGame6()
+        }
+    }
+
+    const rushIn = function(){
+        const encounter = confirm('You run in yelling LEEEEROYYYYYYY - because you know no references after 2005 - and just as you get through the door the laptop shoots out a beam of light and Javascript appears. He immediately turns to you and says "Mortal, my reign is now, only those who best me in a contest of logic can seal me. Answer these questions three." Do you...');
+        if(encounter == true){
+            questionOne()
+        } else{
+            endGame5()
+        }
+    }
+
     const backClassroom = function(){
-        const summon = confirm('As you come up to the end of the hall, you hear faint chanting. You quietly turn the corner only to see Threes a Curse around a glowing laptop. They are summoning Lore Internets second-in-command, Javascript. What do you do?)
+        const summon = confirm('As you come up to the end of the hall, you hear faint chanting. You quietly turn the corner only to see Threes a Curse around a glowing laptop. They are summoning Lore Internets second-in-command, Javascript. What do you do?');
         if (summon == true){
             rushIn()
         } else{
