@@ -41,37 +41,55 @@ You've done it hero, you have saved HackerYou, your cohort, and the world, from 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <!-- <script src="script.js"></script> -->
     <script>
-    // const scanFob = confirm('You scan your trusty key fob and the doors slowly open, the lights are dim, you turn on your phone flashlight. Do you...');
-    //     if (){//call in elevator function
-    // } else{
-    //     //run stairs function
-    // }
-
-    // const buzzIn = confirm('You buzz up to HackerYou to see if there is any response. First attempt does nothing. You try again, and this time you get a weird static youve never heard before, and the doors slowly open. You walk through and...')
-    //     if(){
-    //         //run elevator function
-    //     }
-    //     else{
-    //         //run stairs function
-    //     }
-
-    // const elevator = confirm('You find an exhauted Brandon sitting on the ground, back against the elevator wall. He weakly says "You cant save them, its too late", and passes out. Do you...');
-    //     if(){
-    //         //run go up elevator
-    //     }
-    //     else{
-    //         //run stairs function
-    //     }  
-
-    // const stairs = confirm('You slowly start going up the stairs, when you turn the corner to the second floor you see Sam standing at the top, staring down. You call out "Whats going on??" and there is no response. Do you...');
-    //     if(){
-    //         //run walkupstairs function
-    //     }
-    //     else{
-    //         //run pushdownstairs function
-    //     }    
-
     
+    const endGame1 = function(){
+        alert('You make your way towards Sam. The second you reach him and stick your hand out to shake him, he looks directly at you and suddenly pushes you down the stairs. You hit every step and are knocked unconcious, but never heard from again...')
+    }
+
+    const endGame2 = function(){
+        alert('Every step you take towards your friends they take one step closer to you. You stop and scream at them to wake up but it falls on deaf ears, continues towards you. You try to run but an arm reaches out and grabs your shirt. You are surrounded by your friends and forced to look into a flashing laptop, mind lost forever...')
+    }
+
+    const endGame3 = function(){
+        alert('You decide to check the bathrooms, not sure if it is because of paranoia or adreneline. You search around the left bathroom and find nothing.  The right bathroom has the same result. You swing open the door only to come face to face with Scott and Mikey. Before you could even move again, Mikey pulls you out of the bathroom and turns you towards the flashing laptop. Now..youre of them...')
+    }
+
+    const backClassroom = function(){
+        const summon = confirm('As you come up to the end of the hall, you hear faint chanting. You quietly turn the corner only to see Threes a Curse around a glowing laptop. They are summoning Lore Internets second-in-command, Javascript. What do you do?)
+        if (summon == true){
+            rushIn()
+        } else{
+            endGame4()
+        }
+    }
+
+    const walkDownHall = function(){
+        const search = confirm('A great sense of dread fills your body. Instinctivly, you ignore your classmates and b-line for the main classroom only to find it locked. You run down the hall and at the fork do you...');
+        if(search == true){
+            backClassroom()
+        } else{
+            endGame3()
+        }
+    }
+
+
+    const commonArea = function(){
+        const cohort = confirm('You shine your phone flashlight into the common area only to find all of Cohort20 standing around the tables, laptops flashing. They all turn towards you and stare. Do you...');
+        if (cohort == true){
+            walkDownHall()
+        } else{
+            endGame2()
+        }
+    }    
+
+    const enterMain = function(){
+        const ascend = confirm('You put on a brave face, and keep going up. As you ascend, the lights blow out suddenly. When you get to the third floor, the doors open to a pitch black room, you exit slowly and...');
+        if (ascend == true){
+            commonArea();
+        } else{
+            walkDownHall();
+        }
+    }
 
     const useStairs = function(){
         const walkUp = confirm('You slowly start going up the stairs, when you turn the corner to the second floor you see Sam standing at the top, staring down. You call out "Whats going on??" and there is no response. Do you...');
