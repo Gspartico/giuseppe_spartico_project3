@@ -1,0 +1,19 @@
+
+
+.wrapper{
+    max-width: 40% 
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+#modal_dialog{
+    width: 50%;
+    background-color: aquamarine;
+    border: 10px solid black;
+    text-align: center;
+    padding: 25px;
+}
