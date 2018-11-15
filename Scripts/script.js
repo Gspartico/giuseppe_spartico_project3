@@ -33,7 +33,7 @@ $(function(){
     }
 
     const questionOne = function(){
-        dialog('You stick your hand out and motion "come on" like some badass Neo-from-the-matrix type and the demon speaks - Question the first: An external Javascript file must contain a <script> tag?', 'False', questionTwo, 'True', endGame6);
+        dialog('You stick your hand out and motion "come on" like some badass Neo-from-the-matrix type and the demon speaks - Question the first: An external Javascript file must contain a script tag?', 'False', questionTwo, 'True', endGame6);
     }
 
     const endGame4 = function(){
@@ -97,15 +97,14 @@ $(function(){
         dialog('You havent heard from your Cohort project partners for days. Concerned, you head over to HackerYou to see if you can get some answers', 'Head over', howToEnter, 'I don\'t feel like it', howToEnter);
     }
 
+    dialog('Play game', 'Start', enterBuilding, 'No', enterBuilding);
 
     function dialog(message, button1text, button1, button2text, button2) {
+        // const imgElem = `<img src="${image}" alt="${alt}">`;
+        // $('.images').html(imgElem)
         $('.title').html(message);
         $('.button1').val(button1text);
         $('.button2').val(button2text);
-
-
-
-
         $('input[type=button]').off('click').on('click', function () {
             const buttonID = $(this).attr('id');
 
@@ -116,6 +115,8 @@ $(function(){
                 button2()
             }
         });
+        // use once all photos loaded in and properly labeled in assets folder.
+        // image, alt, 
 
         // $('.button2').on('click', function () {
         //     button2();
@@ -125,7 +126,6 @@ $(function(){
         // });
     }
 
- dialog('Play game', 'Start', enterBuilding, 'No', enterBuilding);
 
 //turn off event handlet
 

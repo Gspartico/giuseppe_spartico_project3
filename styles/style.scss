@@ -4,20 +4,36 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.wrapper{
-    max-width: 40% 
+html{
+    font-size: 62.5%;
 }
 
 .flex-container{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 50%;
 }
 
 
 #modal_dialog{
     width: 50%;
+    height: 200px;
     background-color: aquamarine;
     border: 10px solid black;
     text-align: center;
     padding: 25px;
+}
+
+.title{
+    margin-bottom: 100px;
 }
