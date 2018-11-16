@@ -5,31 +5,31 @@ $(function(){
     }
 
     const endGame8 = function(){
-        dialog('I will awknowledge your efforts, but your demise was preordained. Now go and join your former comrades as another of my personal minions', 'Play again', enterBuilding, 'I hate you so much', enterBuilding);
+        dialog('I will awknowledge your efforts, but your demise was preordained. Now go and join your former comrades as another of my personal minions', 'Start over', enterBuilding, 'I hate you so much', enterBuilding);
     }
 
     const finishtheGame = function(){
-        dialog('NOOOOOOOOO IT CANNOT BE, I WILL GET MY REVENGE HUMANNNNNNNNN Javascript screams as the laptop implodes within itself. The lights in the building come back one by one. Everyone under Javascripts control slowly come too their senses and try to grasp what is happening. You leave the back classroom and enter the common area', 'Get showered with praise', goodEnding, 'something', goodEnding);
+        dialog('NOOOOOOOOO IT CANNOT BE, I WILL GET MY REVENGE HUMANNNNNNNNN Javascript screams as the laptop implodes within itself. The lights in the building come back one by one. Everyone under Javascripts control slowly come too their senses and try to grasp what is happening. You leave the back classroom and enter the common area', 'Get showered with praise', goodEnding, 'You know you want to', goodEnding);
     }
 
     const endGame7 = function(){
-        dialog('Silly human. Youve wasted my time. For your insolence I will now scatter your mind across the internet, forever forcing you to create -something annoying in Javascript that constantly fails- It is more than you deserve.', 'Play again', enterBuilding, 'Stop my suffering', enterBuilding);
+        dialog('Silly human. Youve wasted my time. For your insolence I will now scatter your mind across the internet, forever forcing you to create -something annoying in Javascript that constantly fails- It is more than you deserve.', 'Start over', enterBuilding, 'Stop my suffering', enterBuilding);
     }
 
     const questionThree = function(){
-        dialog('The Javascript monster shrinks even further, panting, trying to hide its agony. Do not get cocky human, I cannot be bested. CONFRONT YOUR DOOM! QUESTION THREE! What is an Object?', 'Everything is an object', finishtheGame, 'Container with primitive and normal values', endGame8);
+        dialog('The Javascript monster shrinks even further, panting, trying to hide its agony. Do not get cocky human, I cannot be bested. CONFRONT YOUR DOOM! QUESTION THREE! What is an Object?', 'Container with primitive and normal values', endGame8, 'Everything is an object', finishtheGame);
     }
 
     const endGame6 = function(){
-        dialog('Hahaha, you insolent fool, truly thought your puny mortal mind could complete my test?? Youre mind is now mine!!', 'Play again', enterBuilding, 'This is trash', enterBuilding);
+        dialog('Hahaha, you insolent fool, truly thought your puny mortal mind could complete my test?? Your mind is now mine!!', 'Start over', enterBuilding, 'This is trash', enterBuilding);
     }
 
     const questionTwo = function(){
-        dialog('The Javascript monster shrinks in size - Aha, so you are not a complete imbecile, but prepare your mind for question two! How do you declarex a function in Javascript?', 'function myFunction()',questionThree, 'function = myFunction()', endGame7);
+        dialog('The Javascript monster shrinks in size - Aha, so you are not a complete imbecile, but prepare your mind for question two! How do you declarex a function in Javascript?', 'function = myFunction()', endGame7,'function myFunction()', questionThree);
     }
 
     const endGame5 = function(){
-        dialog('Okkkkkkkk so youre just gonna doom all your friends and probably the world because you were scared of some test. Cool. Cool cool cool.', 'Play again', enterBuilding, 'I don\'t like questions', enterBuilding);
+        dialog('Okkkkkkkk so youre just gonna doom all your friends and probably the world because you were scared of some test. Cool. Cool cool cool.', 'Start over', enterBuilding, 'I don\'t like questions', enterBuilding);
     }
 
     const questionOne = function(){
@@ -41,11 +41,11 @@ $(function(){
     }
 
     const rushIn = function(){
-        dialog('You run in yelling LEEEEROYYYYYYY - because you know no references after 2005 - and just as you get through the door the laptop shoots out a beam of light and Javascript appears. He immediately turns to you and says "Mortal, my reign is now, only those who best me in a contest of logic can seal me. Answer these questions three." Do you...', 'Challenge Javascript', questionOne, 'Wuss out',endGame5);
+        dialog('You run in yelling LEEEEROYYYYYYY - because you know no references after 2005 - and just as you get through the door the laptop shoots out a beam of light and Javascript appears. He immediately turns to you and says "Mortal, my reign is now, only those who best me in a contest of logic can seal me. Answer these questions three."  Do you...','Wuss out', endGame5, 'Challenge Javascript', questionOne);
     }
 
     const endGame3 = function(){
-        dialog('You decide to check the bathrooms, not sure if it is because of paranoia or adreneline. You search around the left bathroom and find nothing.  The right bathroom has the same result. You swing open the door only to come face to face with Scott and Mikey. Before you could even move again, Mikey pulls you out of the bathroom and turns you towards the flashing laptop. Now..youre of them...', 'Play again', enterBuilding, 'I\'m over this', enterBuilding)
+        dialog('You decide to check the bathrooms, not sure if it is because of paranoia or adreneline. You search around the left bathroom and find nothing.  The right bathroom has the same result. You swing open the door only to come face to face with Scott and Mikey. Before you could even move again, Mikey pulls you out of the bathroom and turns you towards the flashing laptop. Now..you\'re of them...', 'Play again', enterBuilding, 'I\'m over this', enterBuilding)
     }
 
     const backClassroom = function(){
@@ -54,7 +54,7 @@ $(function(){
 
     
     const walkDownHall = function(){
-        dialog('A great sense of dread fills your body. Instinctivly, you ignore your classmates and b-line for the main classroom only to find it locked. You run down the hall and at the fork do you...', 'Check the back classroom', backClassroom, 'Check the washrooms', endGame3);
+        dialog('A great sense of dread fills your body. Instinctivly, you ignore your classmates and b-line for the main classroom only to find it locked. You run down the hall and at the fork do you...', 'Check the washrooms', endGame3, 'Check the back classroom', backClassroom);
     }
     
     const endGame2 = function(){
@@ -74,7 +74,7 @@ $(function(){
     }
 
      const useStairs = function(){
-        dialog('You slowly start going up the stairs, when you turn the corner to the second floor you see Adam standing at the top, staring down. You call out "Whats going on??" and there is no response. Do you...', 'Sneak past him', enterMain, 'Talk to Adam', endGame1);
+         dialog('You slowly start going up the stairs, when you turn the corner to the second floor you see Adam standing at the top, staring down. You call out "Whats going on??" and there is no response. Do you...', 'Talk to Adam', endGame1, 'Sneak past him', enterMain);
     }
     
     const useElevtor = function () {
@@ -92,24 +92,32 @@ $(function(){
     const howToEnter = function () { 
          dialog('You get to the HackerYou building and you already sense something is off.The lights inside are flickering erratically. To enter, you decide to...', 'Use Fob', scanFob, 'Buzz in', callUp);
     }
+
+    const tooBad = function (){
+        dialog('Too bad yuo\'re playing it anyways!', 'Play game', howToEnter, 'Nope, no backsies', howToEnter);
+    }
     
     const enterBuilding = function () { 
-        dialog('You havent heard from your Cohort project partners for days. Concerned, you head over to HackerYou to see if you can get some answers', 'Head over', howToEnter, 'I don\'t feel like it', howToEnter);
+        dialog('You havent heard from your Cohort project partners for days. Concerned, you head over to HackerYou to see if you can get some answers', 'Head over', howToEnter, 'I don\'t feel like it', tooBad);
     }
 
-    dialog('Play game', 'Start', enterBuilding, 'No', enterBuilding);
+    dialog('Play game', 'Start', enterBuilding, 'No', tooBad);
 
     function dialog(message, button1text, button1, button2text, button2) {
         // const imgElem = `<img src="${image}" alt="${alt}">`;
         // $('.images').html(imgElem)
-        $('.title').html(message);
+        $('.modal-text').html(message);
         $('.button1').val(button1text);
+            if(button1text === 'Play again'){
+                $('.button2').hide()
+            } else{
+                $('.button2').show()
+            }   
         $('.button2').val(button2text);
         $('input[type=button]').off('click').on('click', function () {
             const buttonID = $(this).attr('id');
 
             if(buttonID === 'button1'){
-                console.log('hello')
                 button1();
             } else {
                 button2()
@@ -117,16 +125,6 @@ $(function(){
         });
         // use once all photos loaded in and properly labeled in assets folder.
         // image, alt, 
-
-        // $('.button2').on('click', function () {
-        //     button2();
-        //     $('.button2').off('click');  
-        //     console.log("button 2 clicked")
-
-        // });
     }
-
-
-//turn off event handlet
 
 });
