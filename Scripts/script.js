@@ -9,7 +9,7 @@ $(function(){
     }
 
     const endGame8 = function(){
-        dialog('./assets/Denzel-Washington.jpg', '','I will awknowledge your efforts, but your demise was preordained. Now go and join your former comrades as another of my personal minions', 'Start over', howToEnter, 'I hate you so much', sadBoy);
+        dialog('./assets/Oh-No.gif', '','I will awknowledge your efforts, but your demise was preordained. Now go and join your former comrades as another of my personal minions', 'Start over', howToEnter, 'I hate you so much', sadBoy);
     }
 
     const finishtheGame = function(){
@@ -17,23 +17,23 @@ $(function(){
     }
 
     const endGame7 = function(){
-        dialog('./assets/Denzel-Washington.jpg', '','Silly human. Youve wasted my time. For your insolence I will now scatter your mind across the internet, forever forcing you to create -something annoying in Javascript that constantly fails- It is more than you deserve.', 'Start over', howToEnter, 'Stop my suffering', sadBoy);
+        dialog('./assets/Fade-Away.gif', '','Silly human. Youve wasted my time. For your insolence I will now scatter your mind across the internet, - It is more than you deserve.', 'Start over', howToEnter, 'Stop my suffering', sadBoy);
     }
 
     const questionThree = function(){
-        dialog('./assets/Denzel-Washington.jpg', '','The Javascript monster shrinks even further, panting, trying to hide its agony. Do not get cocky human, I cannot be bested. CONFRONT YOUR DOOM! QUESTION THREE! What is an Object?', 'Container w/ primitive &normal values', endGame8, 'Everything is an object', finishtheGame);
+        dialog('./assets/Enemy-1.jpg', '','The Javascript monster shrinks even further, panting, trying to hide its agony. Do not get cocky human, I cannot be bested. CONFRONT YOUR DOOM! QUESTION THREE! What is an Object?', 'Container w/ primitive & normal values', endGame8, 'Everything is an object', finishtheGame);
     }
 
     const endGame6 = function(){
-        dialog('./assets/Denzel-Washington.jpg', '','Hahaha, you insolent fool, truly thought your puny mortal mind could complete my test?? Your mind is now mine!!', 'Start over', howToEnter, 'This is trash', sadBoy);
+        dialog('./assets/Kirk.gif', '','Hahaha, you insolent fool, truly thought your puny mortal mind could complete my test?? Your mind is now mine!!', 'Start over', howToEnter, 'This is trash', sadBoy);
     }
 
     const questionTwo = function(){
-        dialog('./assets/Denzel-Washington.jpg', '','The Javascript monster shrinks in size - Aha, so you are not a complete imbecile, but prepare your mind for question two! How do you declare a function in Javascript?', 'function = myFunction()', endGame7,'function myFunction()', questionThree);
+        dialog('./assets/Kirk.gif', '','The Javascript monster shrinks in size - Aha, so you are not a complete imbecile, but prepare your mind for question two! How do you declare a function in Javascript?', 'function = myFunction()', endGame7,'function myFunction()', questionThree);
     }
 
     const endGame5 = function(){
-        dialog('./assets/Denzel-Washington.jpg', '','Okkkkkkkk so youre just gonna doom all your friends and probably the world because you were scared of some test. Cool. Cool cool cool.', 'Start over', howToEnter, 'I don\'t like questions', sadBoy);
+        dialog('./assets/Whatever.jpg', '','Okkkkkkkk so youre just gonna doom all your friends and probably the world because you were scared of some test. Cool. Cool cool cool.', 'Start over', howToEnter, 'I don\'t like questions', sadBoy);
     }
 
     const questionOne = function(){
@@ -41,11 +41,11 @@ $(function(){
     }
 
     const endGame4 = function(){
-        dialog('./assets/Denzel-Washington.jpg', '','Lol, way to be a wuss you wuss. Now the world is doomed anyways, you could have at least tried. Booooooo', 'Play again', howToEnter, 'This game sucks', sadBoy);
+        dialog('./assets/Run-Away.gif', '','Lol, way to be a wuss you wuss. Now the world is doomed anyways, you could have at least tried. Booooooo', 'Play again', howToEnter, '', '');
     }
 
     const rushIn = function(){
-        dialog('./assets/Denzel-Washington.jpg', '','You run in yelling LEEEEROYYYYYYY - because you know no references after 2005 - and just as you get through the door the laptop shoots out a beam of light and Javascript appears. He immediately turns to you and says "Mortal, my reign is now, only those who best me in a contest of logic can seal me. Answer these questions three."  Do you...','Wuss out', endGame5, 'Challenge Javascript', questionOne);
+        dialog('./assets/Arnold.gif', '','You run in yelling LEEEEROYYYYYYY - because you know no references after 2005 - and just as you get through the door the laptop shoots out a beam of light and Javascript appears. He immediately turns to you and says "Mortal, my reign is now, only those who best me in a contest of logic can seal me. Answer these questions three."  Do you...','Wuss out', endGame5, 'Challenge Javascript', questionOne);
     }
 
     const endGame3 = function(){
