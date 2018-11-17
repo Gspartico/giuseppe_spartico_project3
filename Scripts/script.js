@@ -82,19 +82,19 @@ $(function(){
     }
     
     const callUp = function () {
-        dialog('You buzz up to HackerYou to see if there is any response. First attempt does nothing. You try again, and you hear a weird static you\'ve never heard before, and the doors slowly open. You walk through and...', 'Take elevator', useElevtor, 'Use stairs', useStairs);
+        dialog('./assets/HY-Entryway.jpg', '','You buzz up to HackerYou to see if there is any response. First attempt does nothing. You try again, and you hear a weird static you\'ve never heard before, and the doors slowly open. You walk through and...', 'Take elevator', useElevtor, 'Use stairs', useStairs);
     }
 
     const scanFob = function () {
-        dialog('You scan your trusty key fob and the doors slowly open, the lights are dim, you turn on your phone flashlight. Do you...', 'Use elevator', useElevtor, 'Take stairs', useStairs);
+        dialog('./assets/HY-Entryway.jpg', '','You scan your trusty key fob and the doors slowly open, the lights are dim, you turn on your phone flashlight. Do you...', 'Use elevator', useElevtor, 'Take stairs', useStairs);
     }
         
     const howToEnter = function () { 
-         dialog('You get to the HackerYou building and you already sense something is off. The lights inside are flickering erratically. To enter, you decide to...', 'Use Fob', scanFob, 'Buzz in', callUp);
+         dialog('./assets/HY-Buzzer.jpg', '','You get to the HackerYou building and you already sense something is off. The lights inside are flickering erratically. To enter, you decide to...', 'Use Fob', scanFob, 'Buzz in', callUp);
     }
 
     const tooBad = function (){
-        dialog('Too bad yuo\'re playing it anyways!', 'Play game', howToEnter, 'Nope, no backsies', howToEnter);
+        dialog('./assets/Denzel-Washington.jpg', '', 'Too bad yuo\'re playing it anyways!', 'Play game', howToEnter, 'Nope, no backsies', howToEnter);
     }
     
     // const enterBuilding = function () { 
@@ -103,9 +103,9 @@ $(function(){
 
     dialog('Play game', 'Start', howToEnter, 'No', tooBad);
 
-    function dialog(message, button1text, button1, button2text, button2) {
-        // const imgElem = `<img src="${image}" alt="${alt}">`;
-        // $('.images').html(imgElem)
+    function dialog(image, alt, message, button1text, button1, button2text, button2) {
+        const imgElem = `<img src="${image}" alt="${alt}">`;
+        $('.images').html(imgElem)
         $('.modal-text').html(message);
         $('.button1').val(button1text);
             if(button1text === 'Play again'){
