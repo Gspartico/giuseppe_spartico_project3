@@ -74,7 +74,7 @@ $(function(){
     }
     
     const endGame1 = function(){
-        dialog('./assets/Mr-Burns.jpg', '','Ummmmmm maybe dont run towards people not saying anything acting super weird? Like, Duh. You did this to yourself', 'Start over', howToEnter, 'This is stupid', sadBoy);
+        dialog('./assets/Mr-Burns.jpg', '','Ummmmmm maybe dont run towards people not saying anything acting super weird? Like, Duh. You did this to yourself.', 'Start over', howToEnter, 'This is stupid', sadBoy);
     }
 
      const useStairs = function(){
@@ -122,6 +122,7 @@ $(function(){
             } else {
                 button2()
             }
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
         });
         // use once all photos loaded in and properly labeled in assets folder.
         // image, alt, 

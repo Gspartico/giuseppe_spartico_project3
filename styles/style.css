@@ -138,6 +138,11 @@ html {
 .wrapper {
   max-width: 800px; }
 
+h1,
+.intro-text,
+.custom-modal {
+  text-align: center; }
+
 header {
   background-color: #000;
   width: 100%;
@@ -147,16 +152,16 @@ header {
   display: flex; }
 
 h1 {
-  margin: 0;
-  width: 100%;
-  text-align: center;
-  text-transform: uppercase;
   font-family: 'Creepster', sans-serif;
-  letter-spacing: 3px;
-  font-size: 8rem;
   background: -webkit-linear-gradient(#d12026, #fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  font-size: 8rem;
+  letter-spacing: 3px;
+  margin: 0;
+  width: 100%;
+  text-transform: uppercase;
   padding-top: 5px; }
 
 main {
@@ -180,12 +185,12 @@ main {
 
 .intro-text {
   font-family: 'Creepster', sans-serif;
-  letter-spacing: 3px;
-  font-size: 3rem;
   background: -webkit-linear-gradient(#d12026, #fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: center; }
+  font-size: 30px;
+  font-size: 3rem;
+  letter-spacing: 3px; }
 
 .intro-text p {
   margin-bottom: 0; }
@@ -204,13 +209,13 @@ img {
   justify-content: center; }
 
 .custom-modal {
+  font-family: 'Arvo', sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem;
   width: 50%;
   height: 300px;
   background-color: rgba(255, 255, 255, 0);
-  text-align: center;
   padding: 15px;
-  font-family: 'Arvo', sans-serif;
-  font-size: 1.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,6 +252,7 @@ footer {
 
 footer p {
   font-family: 'Arvo', sans-serif;
+  font-size: 15px;
   font-size: 1.5rem; }
 
 footer ul {

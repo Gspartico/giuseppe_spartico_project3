@@ -1,0 +1,33 @@
+$primaryColor: #fff;
+$accentColor: #d12026;
+
+@mixin primaryFont($size) {
+    font-family: 'Creepster', sans-serif;
+    background: -webkit-linear-gradient(#d12026, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: $size * 1px;
+    font-size: ($size / 10) * 1rem;
+    letter-spacing: 3px;
+    
+}
+
+@mixin modalFont($size) {
+    font-family: 'Arvo', sans-serif;
+    font-size: $size * 1px;
+    font-size: ($size / 10) * 1rem;    
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.wrapper{
+    max-width: 800px;
+}
+
+h1,
+.intro-text,
+.custom-modal{
+    text-align: center;
+}
