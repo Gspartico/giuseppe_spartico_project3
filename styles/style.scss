@@ -1,12 +1,12 @@
 @import "partials/setup";
 @import "partials/global";
+@import "partials/footer";
 
 
 header{
     background-color: #000;
     width: 100%;
     min-height: 15vh;
-    display: flex;
 }
 
 h1{
@@ -25,12 +25,6 @@ main{
     min-height: calc(150vh - 15vh);
 }
 
-.flex-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .intro-text{
     @include primaryFont(30);    
 }
@@ -39,35 +33,23 @@ main{
     margin-bottom: 0;
 }
 
-.images{
-    display: flex;
-    width: 50%;
-}
-
 img{
     margin-top: 30px;
     width: 100%;
-    justify-content: center;
 }
 
 
 .custom-modal{
     @include modalFont(18);
-    width: 50%;
     height: 300px;
     background-color: rgba(255, 255, 255 , 0);
     padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-bottom: 10px;
 }
 
 .modal-text{
     margin-bottom: 15px;
-    color: $primaryColor;
-    line-height: 1.5;
-    
+    color: $primaryColor;    
 }
 
 input{
@@ -76,32 +58,6 @@ input{
     border: 2px solid black;
     width: 70%;
     padding: 10px;
-
-}
-
-footer{
-    background: #000;
-    color: $primaryColor;
-    display: flex;
-    justify-content: center;
-}
-
-footer p{
-    @include modalFont(15);
-}
-
-footer ul{
-    display: flex;
-    width: 300px;
-    justify-content: space-evenly;
-    padding: 0;
-    list-style: none;
-}
-
-footer a{
-    color: $accentColor;
-    font-size: 2rem;
-    line-height: 1.5;
 }
 
 @media(max-width: 1110px){
