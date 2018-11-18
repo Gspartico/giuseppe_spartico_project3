@@ -5,7 +5,7 @@ $(function(){
     }
 
     const goodEnding = function(){
-        dialog('./assets/Dug.jpg', '','Youve done it hero, you have saved HackerYou, your cohort, and the world, from one of The Internets biggest threats. You are named Pug Lord of HackerYou - the highest of all honours - and gifted Dug, immortal protector of this scared space. Enjoy your spoils, for you will be called upon again..', 'Thank you for playing!', howToEnter, 'something', howToEnter);
+        dialog('./assets/Dug.jpg', '','Youve done it hero, you have saved HackerYou, your cohort, and the world, from one of The Internets biggest threats. You are named Pug Lord of HackerYou - the highest of all honours - and gifted Dug, immortal protector of this scared space. Enjoy your spoils, for you will be called upon again..', 'Thank you for playing!', howToEnter, '', '');
     }
 
     const endGame8 = function(){
@@ -13,7 +13,7 @@ $(function(){
     }
 
     const finishtheGame = function(){
-        dialog('./assets/Denzel-Washington.jpg', '','NOOOOOOOOO IT CANNOT BE, I WILL GET MY REVENGE HUMANNNNNNNNN Javascript screams as the laptop implodes within itself. The lights in the building come back one by one. Everyone under Javascripts control slowly come too their senses and try to grasp what is happening. You leave the back classroom and enter the common area', 'Get showered with praise', goodEnding, 'You know you want to', goodEnding);
+        dialog('./assets/Victory.jpg', '','NOOOOOOOOO IT CANNOT BE, I WILL GET MY REVENGE HUMANNNNNNNNN Javascript screams as the laptop implodes within itself. The lights in the building come back one by one. Everyone under Javascripts control slowly come too their senses and try to grasp what is happening. You leave the back classroom and enter the common area', 'Get showered with praise', goodEnding, 'You know you want to', goodEnding);
     }
 
     const endGame7 = function(){
@@ -29,7 +29,7 @@ $(function(){
     }
 
     const questionTwo = function(){
-        dialog('./assets/Kirk.gif', '','The Javascript monster shrinks in size - Aha, so you are not a complete imbecile, but prepare your mind for question two! How do you declare a function in Javascript?', 'function = myFunction()', endGame7,'function myFunction()', questionThree);
+        dialog('./assets/Enemy-2.jpg', '','The Javascript monster shrinks in size - Aha, so you are not a complete imbecile, but prepare your mind for question two! How do you declare a function in Javascript?', 'function = myFunction()', endGame7,'function myFunction()', questionThree);
     }
 
     const endGame5 = function(){
@@ -41,7 +41,7 @@ $(function(){
     }
 
     const endGame4 = function(){
-        dialog('./assets/Run-Away.gif', '','Lol, way to be a wuss you wuss. Now the world is doomed anyways, you could have at least tried. Booooooo', 'Play again', howToEnter, '', '');
+        dialog('./assets/Run-Away.gif', '','Lol, way to be a wuss you wuss. Now the world is doomed anyways, you could have at least tried. Booooooo', 'Play again', howToEnter, 'Just kinda bored tbh', sadBoy);
     }
 
     const rushIn = function(){
@@ -62,7 +62,7 @@ $(function(){
     }
     
     const endGame2 = function(){
-        dialog('./assets/Grabbed.jpg', '','Every step you take towards your friends they take one step closer to you. You stop and scream at them to wake up but it falls on deaf ears, continues towards you. You try to run but an arm reaches out and grabs your shirt. You are surrounded by your friends and forced to look into a flashing laptop, mind lost forever...', 'Play Again', howToEnter, 'Boooooring', sadBoy);
+        dialog('./assets/Grabbed.jpg', '','Every step you take towards your friends they take one step closer to you. You stop and scream at them to wake up but it falls on deaf ears, continues towards you. You try to run but an arm reaches out and grabs your shirt. You are surrounded by your friends and forced to look into a flashing laptop, mind lost forever...', 'Play Again', howToEnter, 'Yawn...', sadBoy);
         }
 
     const commonArea = function(){
@@ -108,7 +108,7 @@ $(function(){
         $('.images').html(imgElem)
         $('.modal-text').html(message);
         $('.button1').val(button1text);
-            if(button1text === 'Play again'){
+            if(button1text === 'Thank you for playing!'){
                 $('.button2').hide()
             } else{
                 $('.button2').show()
