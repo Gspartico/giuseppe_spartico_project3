@@ -177,6 +177,10 @@ footer {
   -ms-flex-pack: center;
   justify-content: center; }
 
+footer a:hover,
+input:hover {
+  color: #fff; }
+
 footer {
   background: #000;
   color: #fff; }
@@ -219,7 +223,11 @@ main {
 
 img {
   margin-top: 30px;
-  width: 100%; }
+  width: 100%;
+  max-height: 600px; }
+
+input {
+  outline: none; }
 
 .custom-modal {
   font-family: 'Arvo', sans-serif;
