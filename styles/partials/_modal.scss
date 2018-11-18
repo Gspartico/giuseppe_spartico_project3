@@ -1,0 +1,20 @@
+.custom-modal{
+    @include modalFont(18);
+    height: 300px;
+    background-color: rgba(255, 255, 255 , 0);
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.modal-text{
+    margin-bottom: 15px;
+    color: $primaryColor;    
+}
+
+input{
+    background-color: $accentColor;
+    margin: 5px;
+    border: 2px solid black;
+    width: 70%;
+    padding: 10px;
+}

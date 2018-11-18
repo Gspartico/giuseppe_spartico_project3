@@ -198,24 +198,6 @@ footer a {
   color: #d12026;
   font-size: 2rem; }
 
-header {
-  background-color: #000;
-  width: 100%;
-  min-height: 15vh; }
-
-h1 {
-  font-family: 'Creepster', sans-serif;
-  background: -webkit-linear-gradient(#d12026, #fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 80px;
-  font-size: 8rem;
-  letter-spacing: 3px;
-  margin: 0;
-  width: 100%;
-  text-transform: uppercase;
-  padding-top: 5px; }
-
 main {
   background-image: url(../assets/HY-Main-Floor-Dark.jpg);
   background-size: cover;
@@ -258,6 +240,24 @@ input {
   border: 2px solid black;
   width: 70%;
   padding: 10px; }
+
+header {
+  background-color: #000;
+  width: 100%;
+  min-height: 15vh; }
+
+h1 {
+  font-family: 'Creepster', sans-serif;
+  background: -webkit-linear-gradient(#d12026, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  font-size: 8rem;
+  letter-spacing: 3px;
+  margin: 0;
+  width: 100%;
+  text-transform: uppercase;
+  padding-top: 5px; }
 
 @media (max-width: 1110px) {
   input {
