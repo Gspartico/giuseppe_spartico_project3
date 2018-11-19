@@ -325,4 +325,5 @@ h1 {
   input {
     font-size: 1.3rem; }
   .images {
-    width: 80%; } }
+    width: 80%;
+    max-height: 500px; } }

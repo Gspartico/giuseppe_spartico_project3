@@ -220,27 +220,5 @@ $(function(){
         'Nope, no backsies', howToEnter);
     }
     // function for starting the game, appears on main page upon load. calls in enter building scenario with button 1 click, or force start screen with button 2 click.
-    dialog('', '', 'Play game', 'Start', howToEnter, 'No', tooBad);
-
-    // function dialog(image, alt, message, button1text, button1, button2text, button2) {
-    //     const imgElem = `<img src="${image}" alt="${alt}">`;
-    //     $('.images').html(imgElem)
-    //     $('.modal-text').html(message);
-    //     $('.button-1').val(button1text);
-    //         if(button1text === 'Thank you for playing!'){
-    //             $('.button-2').hide()
-    //         } else{
-    //             $('.button-2').show()
-    //         }   
-    //     $('.button-2').val(button2text);
-    //     $('input[type=button]').off('click').on('click', function () {
-    //         const buttonID = $(this).attr('id');
-    //             if(buttonID === 'button-1'){
-    //                 button1();
-    //             } else {
-    //                 button2()
-    //             }
-    //     $('html, body').animate({ scrollTop: 0 }, 'slow');
-    //     });
-    // }
+    dialog('', '', 'Play game', 'Start', howToEnter, 'No', tooBad);x
 });
