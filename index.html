@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link type="image/png" href="./Assets/Inverted-HY-Logo.png" rel="icon">
+    <link type="image/png" href="./assets/Inverted-HY-Logo.png" rel="icon">
     <link rel="apple-touch-icon" sizes="114x114" href="./Assets/Inverted-HY-Logo.png" />
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo|Creepster" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"crossorigin="anonymous">
     <title>Horror at HackerYou</title>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <h1>Horror At HackerYou</h1>
     </header>
+    <!-- Main text and modal -->
     <main class="flex-container">
         <audio src= "./assets/Audio/thunder_strike_2-Mike_Koenig-2099467696.mp3" type="audio/mp3" autoplay loop></audio>
         <div class="intro-text wrapper">
             <p>You haven't heard from your Cohort project partners for days. Concerned, you head over to HackerYou to see if you can get some answers...</p>
         </div>
+        <!-- Custom modal with empty div for images to load into -->
         <div class="images"></div>
         <div class="custom-modal">
             <div class='modal-text'></div>
-            <input type='button' class = "button-1" id='button-1'/>
-            <input type='button' class = "button-2" id='button-2'/>
+            <input type='button' class ="button-1" id='button-1'/>
+            <input type='button' class ="button-2" id='button-2'/>
         </div>   
     </main>
+    <!-- Footer -->
     <footer>
         <p>&#169; Giuseppe Spartico, 2018</p>
         <ul>
@@ -36,9 +40,9 @@
             <li><a href="https://www.linkedin.com/in/giuseppe-spartico-26270957/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
         </ul>
     </footer>
-    
+    <!-- Linking script page -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-    <script src="scripts/script.js"></script>
+    <script src="./scripts/script.js"></script>
 
 </body>
 </html>
